@@ -1,7 +1,7 @@
 import * as React from "react"
-import Footer from "./footer"
-import Seo from './seo.js'
 import Header from "./header"
+import Seo from './seo.js'
+import Footer from "./footer"
 
 const MainLayout = (props) => (
   <>

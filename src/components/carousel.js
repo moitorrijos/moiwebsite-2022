@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "../styles/_carousel.sass"
 import prev_icon from "../assets/prev-icon.svg"

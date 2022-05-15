@@ -24,11 +24,27 @@ module.exports = {
       icon: 'src/assets/icon.png',
       display: `standalone`,
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-remark-images", {
+    resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/about-layout.js")
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 685,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+  }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
-      "path": "./src/images/"
+      "path": "./src/assets/"
     },
     __key: "images"
   }, {
