@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
 import Carousel from "../../components/carousel"
 import portfolio from "../../assets/portfolio.svg"

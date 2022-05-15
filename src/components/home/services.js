@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 
 import sitios_profesionales from "../../assets/sitios-web-profesionales.svg"
 import sitios_rapidos from "../../assets/sitios-web-rapidos.svg"
