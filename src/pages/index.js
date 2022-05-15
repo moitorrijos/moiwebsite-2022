@@ -4,7 +4,6 @@ import Hero from "../components/hero"
 import Services from "../components/home/services"
 import Portfolio from "../components/home/portfolio"
 import Footer from "../components/footer"
-import "../styles/main.sass"
 
 const Index = () => (
   <>

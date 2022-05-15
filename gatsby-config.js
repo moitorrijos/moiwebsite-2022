@@ -16,7 +16,13 @@ module.exports = {
   }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      name: 'MoiTorrijos',
+      short_name: 'Moi',
+      start_url: '/',
+      background_color: '#1B33B3',
+      theme_color: '#D00000',
+      icon: 'src/assets/icon.png',
+      display: `standalone`,
     }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
