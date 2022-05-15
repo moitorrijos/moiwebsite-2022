@@ -1,0 +1,104 @@
+@import 'variables'
+$nav-border-radius: 20px
+
+.navigation
+  display: grid
+  grid-template-columns: repeat(6, 1fr)
+  align-items: stretch
+  justify-content: space-around
+  max-width: $max-container-width
+  width: 100%
+  font-size: 0.9rem
+  z-index: 4
+  margin: 0 auto
+
+  .logo-nav
+    padding: 0.75rem 0
+
+    svg
+      height: 100px
+
+      @media (max-width: 768px)
+        height: 60px
+
+  svg
+    fill: #ffffff
+
+  @media screen and ( max-width: 953px )
+    left: 0
+    transform: translateX(0)
+
+  @media screen and ( max-width: 750px )
+    font-size: 0.6rem
+    
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-grow: 1
+    position: relative
+    transition: all 0.25s ease-in-out
+    color: $white
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    text-align: center
+    padding: 2rem 3rem
+
+    @media screen and ( max-width: 1200px )
+      padding: 2rem
+
+    @media screen and (max-width: 768px)
+      padding: 2rem 0.5rem
+
+    &.current-page
+      background-color: transparentize($light-gray, 0.9)
+
+      @media screen and ( max-width: 768px)
+        background-color: transparent
+
+      &.logo-nav
+        background-color: transparent
+
+    img
+      opacity: 0.8
+
+    @media screen and ( max-width: 376px )
+      padding: 0.75rem
+
+    @media screen and ( max-width: 360px )
+      padding: 0.5rem
+
+    img
+      margin-bottom: 0.5rem
+      height: 26px
+      width: 26px
+
+      @media screen and ( max-width: 1200px )
+        height: 25px
+        width: 25px
+
+      @media screen and ( max-width: 750px )
+        height: 18px
+        width: 18px
+
+      @media screen and ( max-width: 321px )
+        height: 14px
+        width: 14px
+        
+    svg
+      height: 45px
+      margin-bottom: 4px
+
+      @media screen and ( max-width: 1200px )
+        height: 35px
+
+      @media screen and (max-width: 500px)
+        height: 30px
+
+    &:hover
+      background-color: transparentize($light-gray, 0.95)
+
+    @media screen and (max-width: 1200px)
+      border-radius: 0

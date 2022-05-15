@@ -1,0 +1,76 @@
+@import 'variables'
+
+.inner-form
+  padding: 2rem 0
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr))
+  grid-gap: 40px
+  
+  label
+    display: block
+    line-height: 1.1
+
+    &.saludos
+      display: none
+  
+  input, select, textarea
+    font-size: inherit
+    font-family: inherit
+    color: inherit
+    border: none
+    appearance: none
+    padding: 16px 15px 8px
+    border-bottom: 4px solid $primary-color
+    width: 100%
+    box-shadow: $box-shadow
+
+    &::placeholder
+      color: lighten($gray, 10%)
+
+  textarea
+    min-height: 225px
+
+  select
+    background:
+      image: url('../assets/select-arrow.svg')
+      repeat: no-repeat
+      position: center right 1rem
+
+$button-width: 180px
+
+button.primary-button
+  width: $button-width
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  cursor: pointer
+
+@keyframes loadingSubmit
+	0%
+		background-position-x: 0
+	100%
+		background-position-x: $button-width
+
+button.sending
+  background: linear-gradient(to right, $primary-color, lighten($primary-color, 10%), $primary-color)
+  background-size: $button-width
+  animation:
+    duration: 1s
+    fill-mode: forwards
+    iteration-count: infinite
+    timing-function: linear
+    name: loadingSubmit
+
+@mixin messageConfirmation($color)
+  background-color: $color
+  color: lighten($color, 75%)
+  border: 1px solid darken($color, 25%)
+
+.message
+  margin-top: 2rem
+  padding: 1rem 2rem
+  border-radius: 0.5rem
+  &.success
+    @include messageConfirmation($terciary-color)
+  &.error
+    @include messageConfirmation($secondary-color)

@@ -1,0 +1,57 @@
+@import 'variables'
+@import 'helpers'
+
+.footer-container
+  @extend %outer-container
+  color: $primary-color
+  padding-bottom: 0
+
+.footer-columns
+  font-size: 0.85rem
+  @extend %three_column_grid
+
+  a
+    color: $primary-color
+    transition: color 0.25s ease-in-out
+
+    &:hover
+      color: darken($primary-color, 12%)
+  h3
+    margin: 1rem 0
+
+.footer-logo
+  display: flex
+  flex-flow: row wrap
+
+  svg
+    width: 50px
+    margin: 20px 0 20px 30px
+    path
+      fill: $primary-color
+
+.footer-about
+  width: 180px
+
+.social-media-moitorrijos
+  display: grid
+  grid-template-columns: repeat(auto-fill, 22px)
+  grid-gap: 20px
+
+  a
+    display: flex
+    flex-flow: column
+    justify-content: space-between
+    align-items: center
+    font-size: 0.5rem
+
+    svg
+      margin-bottom: 4px
+      width: 24px
+      height: 24px
+
+.copyright
+  text-align: center
+  margin: 2rem 0
+  font-size: 0.75rem
+  letter-spacing: 1px
+  opacity: 0.9

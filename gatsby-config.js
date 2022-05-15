@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `MoiTorrijos2022`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "Juan Moisés Torrijos",
+    siteurl: "https://moitorrijos.com",
+    siteUrl: "https://moitorrijos.com",
+    description:
+      "Sitio Web de Juan Moisés Torrijos, diseñador y desarrollador web.",
+    message:
+      "Hola, mi nombre es Juan Moisés Torrijos, soy diseñador y desarrollador  de sitios y aplicaciones para la web, en la Ciudad de Panamá 🇵🇦.",
   },
   plugins: ["gatsby-plugin-sass", {
     resolve: 'gatsby-plugin-google-analytics',

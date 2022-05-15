@@ -1,0 +1,16 @@
+@import 'variables'
+  
+.header-image
+  border-top: 1rem solid $primary-color
+  background:
+    image: $linear-gradient
+    repeat: no-repeat
+    size: cover
+    position: center top
+
+  &.home-header
+    background-image: none
+    background-color: transparent
+
+  @media screen and (max-width: 768px)
+    border-top: 0.5rem solid $primary-color
