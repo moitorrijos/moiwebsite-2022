@@ -12,11 +12,13 @@ const BlogPost = ({ data }) => {
       <div className="main-content">
         <div className="blog-columns">
           <SocialSidebar />
-          <article className="post">
-            <h2>{mdx.frontmatter.title}</h2>
-            <p className="date">Publicado el {mdx.frontmatter.date}</p>
-            <MDXRenderer>{mdx.body}</MDXRenderer>
-          </article>
+          <div className="posts-content">
+            <article className="post">
+              <h2>{mdx.frontmatter.title}</h2>
+              <p className="date">Publicado el {mdx.frontmatter.date}</p>
+              <MDXRenderer>{mdx.body}</MDXRenderer>
+            </article>
+          </div>
         </div>
       </div>
     </MainLayout>
