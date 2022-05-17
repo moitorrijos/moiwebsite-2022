@@ -271,6 +271,9 @@ hr
 
     .order-0
       order: 0
+
+    svg
+      order: -1
   
 .align-center
   align-items: center
@@ -284,10 +287,11 @@ hr
   h1, h2, h3
     margin-top: 0
 
-@media screen and (max-width: 768px)
-  .portfolio-image
-    order: -1
-    transform: scale(1.1)
+.portfolio-image
+  overflow: visible
+  @media screen and (max-width: 768px)
+      order: -1
+      transform: scale(1.1)
 
 .flex
   display: flex
