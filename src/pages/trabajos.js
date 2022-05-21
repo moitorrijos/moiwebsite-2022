@@ -7,6 +7,40 @@ const Trabajos = () => (
   <PagesLayout title="Mis trabajos">
     <h1 className="centered">Mis trabajos</h1>
     <div class="grid-content-50 align-center gap-40 space-bellow">
+      <StaticImage
+        src="../assets/trabajos/cotizame-website.png"
+        className="medium-image inner-img-medium-border image-shadow border-radius-image portfolio-image"
+        alt="Cotiza Me"
+      />
+      <div class="grid-item">
+        <h2>Cotiza Me</h2>
+        <p>
+          <a
+            href="https://cotiza.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cotiza Me
+          </a>{" "}
+          es un emprendiemiento propio para ayudar a los emprendedores y
+          empresarios a gestionar las relaciones de sus clientes, servicios y
+          productos. Este sitio web fue creado utilizando{" "}
+          <a
+            href="https://astro.build"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Astro
+          </a>
+          , un software que ayuda a crear sitios web estáticos que cargan muy
+          rápido y con muy buena experiencia para los desarrolladores. También
+          funciona para crear la aplicación en sí, que funciona con una base de
+          datos distribuida. La aplicación está alojada en SR Apps.
+        </p>
+        <VisitButton to="http://cotiza.me/">Visita el sitio</VisitButton>
+      </div>
+    </div>
+    <div class="grid-content-50 align-center gap-40 space-bellow">
       <div class="grid-item">
         <h2>Servidores Rápidos</h2>
         <p>
@@ -166,44 +200,6 @@ const Trabajos = () => (
 
     <div class="grid-content-50 align-center gap-40 space-bellow">
       <div class="grid-item">
-        <h2>Llámame Online</h2>
-        <p>
-          <a
-            href="https://llamame.online/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Llámame Online
-          </a>{" "}
-          es una empresa panameña dedicada al servicio de centrales telefónicas
-          en la nube, para las empresas que se necesitan adaptar al teletrabajo.
-          La empresa atiende desde pequeños negocios con pocos colaboradores a
-          call centers distribuidos. Varios de sus clientes tienen colaboradores
-          en diferentes países del mundo. Este sitio web está creado utilizando
-          GatsbyJS como el motor de sitio web estático, para una velocidad de
-          carga muy buena y mejorar así la experiencia de usuario.
-          Adicionalmente, creé un tema personalizado de WooCommerce para la
-          parte de la tienda en línea.
-        </p>
-
-        <VisitButton to="https://llamame.online/">Visita el sitio</VisitButton>
-      </div>
-
-      <StaticImage
-        src="../assets/trabajos/llamame-online-fullsize.png"
-        className="medium-image inner-img-medium-border image-shadow border-radius-image portfolio-image"
-        alt="WordCamp Panama 2019 Website"
-      />
-    </div>
-
-    <div class="grid-content-50 align-center gap-40 space-bellow">
-      <StaticImage
-        src="../assets/trabajos/wordcamp-panama-2019-screen-fullsize.png"
-        className="medium-image inner-img-medium-border image-shadow border-radius-image portfolio-image"
-        alt="WordCamp Panama 2019 Website"
-      />
-
-      <div class="grid-item">
         <h2 id="wordcamp-panam-2019">WordCamp Panamá 2019</h2>
         <p>
           Este sitio fue creado para promocionar el evento que se daba por
@@ -222,6 +218,11 @@ const Trabajos = () => (
           Visita el sitio
         </VisitButton>
       </div>
+      <StaticImage
+        src="../assets/trabajos/wordcamp-panama-2019-screen-fullsize.png"
+        className="medium-image inner-img-medium-border image-shadow border-radius-image portfolio-image"
+        alt="WordCamp Panama 2019 Website"
+      />
     </div>
   </PagesLayout>
 )

@@ -1,18 +1,20 @@
 @import 'variables'
 
+$button-width: 12rem
+
 .inner-form
   padding: 2rem 0
   display: grid
   grid-template-columns: repeat(auto-fit, minmax(288px, 1fr))
   grid-gap: 40px
-  
+
   label
     display: block
     line-height: 1.1
 
     &.saludos
       display: none
-  
+
   input, select, textarea
     font-size: inherit
     font-family: inherit
@@ -36,8 +38,6 @@
       repeat: no-repeat
       position: center right 1rem
 
-$button-width: 180px
-
 button.primary-button
   width: $button-width
   display: flex
@@ -46,10 +46,10 @@ button.primary-button
   cursor: pointer
 
 @keyframes loadingSubmit
-	0%
-		background-position-x: 0
-	100%
-		background-position-x: $button-width
+  0%
+    background-position-x: 0
+  100%
+    background-position-x: $button-width
 
 button.sending
   background: linear-gradient(to right, $primary-color, lighten($primary-color, 10%), $primary-color)

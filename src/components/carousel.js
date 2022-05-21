@@ -53,22 +53,22 @@ const Carousel = () => {
           className="card"
           style={{ transform: `translateX(${-displacement * position}px)` }}
         >
-          <StaticImage src="../assets/slider/icsclass-screen.jpg" alt="ICSClass" />
+          <StaticImage src="../assets/trabajos/cotizame-website.png" alt="ICSClass" />
         </div>
         <div
           className="card"
           style={{ transform: `translateX(${-displacement * position}px)` }}
         >
           <StaticImage
-            src="../assets/slider/intermaritime-screen.jpg"
-            alt="InterMaritime"
+            src="../assets/trabajos/wordcamp-panama-2019-screen-fullsize.png"
+            alt="WordCamp Website"
           />
         </div>
         <div
           className="card"
           style={{ transform: `translateX(${-displacement * position}px)` }}
         >
-          <StaticImage src="../assets/slider/llamame-online-screen.png" alt="Llámame Online" />
+          <StaticImage src="../assets/trabajos/intermaritime-org-screen-fullsize.png" alt="InterMaritime Website" />
         </div>
       </div>
       <div className="positions">

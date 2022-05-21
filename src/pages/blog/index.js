@@ -1,4 +1,4 @@
-import React from "react"
+import * as React from "react"
 import MainLayout from "../../components/main-layout"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import SocialSidebar from "../../components/social-sidebar.js"
